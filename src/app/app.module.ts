@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { HomeComponent } from './views/home/home.component';
+import { GeoxComponent } from './views/geox/geox.component';
+import { NikeComponent } from './views/nike/nike.component';
+import { ConverseComponent } from './views/converse/converse.component';
+import { FavoriteComponent } from './views/favorite/favorite.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    GeoxComponent,
+    NikeComponent,
+    ConverseComponent,
+    FavoriteComponent
   ],
   imports: [
     BrowserModule,

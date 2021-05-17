@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Geox } from 'src/app/models/shoes.model';
+import { Shoe } from 'src/app/models/shoes.model';
 import { ShoesService } from 'src/app/services/shoes.service';
 
 @Component({
@@ -9,11 +9,11 @@ import { ShoesService } from 'src/app/services/shoes.service';
 })
 export class HomeComponent implements OnInit {
 
-  shoesGeox: Geox[] = [];
+  allShoes: Shoe[] = [];
   constructor(private shoesService : ShoesService) { }
 
   ngOnInit(): void {
-    this.shoesService.getAllGeox().then(data => this.shoesGeox = data);
+    this.shoesService.getAll().then(data => this.allShoes = data);
   }
 
 }

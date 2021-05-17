@@ -1,6 +1,9 @@
-export interface Geox {
-    name: string,
-    price: string,
-    image: string,
-    url: string
+export interface Shoe {
+    id: String, 
+    brand: String, 
+    model: String, 
+    price: Number, 
+    urlImg: String,
+    hrefDetail: String, 
+    favorite: Boolean
 }
